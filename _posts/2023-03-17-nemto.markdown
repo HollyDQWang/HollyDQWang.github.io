@@ -4,7 +4,7 @@ title:  "NEMTO: Neural Environment Matting for Novel View and Relighting Synthes
 date:   2023-03-17 22:21:59 +00:00
 image: /images/nemto.png
 categories: research
-authors: "<strongDongqing Wang</strong>,Tong Zhang, Sabine Süsstrunk"
+authors: "<strong>Dongqing Wang</strong>,Tong Zhang, Sabine Süsstrunk"
 # venue: "ACM/IEEE Joint Conference on Digital Libraries"
 # arxiv: https://arxiv.org/abs/1904.12573
 # slides: /pdfs/jcdl2019.pdf
