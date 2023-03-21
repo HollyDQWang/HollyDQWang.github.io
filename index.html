@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <link rel="icon" href="{{ site.baseurl }}/images/icon.png">
+  <link rel="icon" href="images/icon.png">
 </head>
 
 <body>
@@ -106,9 +106,43 @@
             </p>
           </td>
         </tr>
-      </tbody></table>
+        </tbody></table>
 
       <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+          <tr onmouseout="ray_stop()" onmouseover="ray_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='ray_image'>
+                <img src='images/ray_after.png' width="160"></div>
+                <img src='images/ray_before.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function ray_start() {
+                  document.getElementById('ray_image').style.opacity = "1";
+                }
+
+                function ray_stop() {
+                  document.getElementById('ray_image').style.opacity = "0";
+                }
+                ray_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">              
+                <papertitle>Fractissimo: A Fractal Music Visualizer</papertitle>
+              </a>
+              <br>
+              <em>CS 5625 Interactive Computer Graphics</em>, 2021
+              <br>
+              <a href="https://www.cs.cornell.edu/courses/cs5625/2020sp/">Description</a>
+              <p></p>
+              <p> A C++ based Ray Tracer and Rasterizer that include camera system, point, ambient and area light, etc.  </p>
+              <p> A C++ based Rasterizer that implemented both forward and deferred shading, sun-sky model with bloom effect as well as ambient occlusion for light source.</p>
+            
+            </td>
+          </tr>   
+
+
           <tr onmouseout="frac_stop()" onmouseover="frac_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -203,7 +237,7 @@
               <a href="https://www.hybridbody.human.cornell.edu/wovenskin">Project Page</a>
               <p></p>
               <p> Worked on the electronics and software control, detecting user gestures and hand movements as well as tempreture changes of WovenSkin, a fabrication process to create customized functional devices that can be attached directly on human skin.</p>
-           </td>
+            </td>
           </tr>   
 
           <tr onmouseout="visual_stop()" onmouseover="visual_start()">
@@ -238,7 +272,7 @@
               <a href="https://youtu.be/SxZjuxQ1pQA">YouTube</a>
               <p></p>
               <p>A device dedicated for everyone with or without a perfect hearing to create and enjoy music in various colorful ways.</p>
-           </td>
+            </td>
           </tr>
 
 
