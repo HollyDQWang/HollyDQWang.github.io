@@ -52,54 +52,7 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-				
-
-          <!-- <tr onmouseout="mipnerf_stop()" onmouseover="mipnerf_start()"  bgcolor="#ffffd0">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='mipnerf_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/mipnerf_ipe_yellow.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/mipnerf_ipe_yellow.png' width="160">
-              </div>
-              <script type="text/javascript">
-                function mipnerf_start() {
-                  document.getElementById('mipnerf_image').style.opacity = "1";
-                }
-
-                function mipnerf_stop() {
-                  document.getElementById('mipnerf_image').style.opacity = "0";
-                }
-                mipnerf_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="http://jonbarron.info/mipnerf">
-                <papertitle>Mip-NeRF: A Multiscale Representation for Anti-Aliasing Neural Radiance Fields</papertitle>
-              </a>
-              <br>
-              <strong>Jonathan T. Barron</strong>,
-              <a href="https://bmild.github.io/">Ben Mildenhall</a>,
-              <a href="http://matthewtancik.com/">Matthew Tancik</a>, <br>
-              <a href="https://phogzone.com/">Peter Hedman</a>,
-              <a href="http://www.ricardomartinbrualla.com/">Ricardo Martin-Brualla</a>,
-              <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>
-              <br>
-							<em>ICCV</em>, 2021 &nbsp <font color="red"><strong>(Oral Presentation, Best Paper Honorable Mention)</strong></font>
-              <br>
-              <a href="http://jonbarron.info/mipnerf">project page</a>
-              /
-              <a href="https://arxiv.org/abs/2103.13415">arXiv</a>
-              /
-              <a href="https://youtu.be/EpH175PY1A0">video</a>
-							/
-              <a href="https://github.com/google/mipnerf">code</a>
-              <p></p>
-              <p>NeRF is aliased, but we can anti-alias it by casting cones and prefiltering the positional encoding function.</p>
-            </td>
-          </tr>  -->
-
+          
           <tr onmouseout="nemto_stop()" onmouseover="nemto_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -114,7 +67,7 @@
                   document.getElementById('nemto_image').style.opacity = "1";
                 }
 
-                function nemto_start() {
+                function nemto_stop() {
                   document.getElementById('nemto_image').style.opacity = "0";
                 }
                 nemto_stop()
@@ -123,7 +76,6 @@
             <td style="padding:20px;width:75%;vertical-align:middle">
               <a href="https://dongqing-wang.com/nemto">
                  <!-- todo add project page -->
-
                 <papertitle>NEMTO: Neural Environment Matting for Novel View and Relighting Synthesis of Transparent Objects</papertitle>
               </a>
               <br>
@@ -139,6 +91,51 @@
               <a href="">Code (Coming Soon)</a>
               <p></p>
               <p> A neural representation for a 3D transparent object that disentangles its geometry and illumination-dependent appearance.</p>
+            
+            </td>
+          </tr>   
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>School Projects</heading>
+              <p>
+                In my undergraduate studies at Cornell, I've been involved in many interesting projects from music visualization to on-skin interface development.   
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+
+          <tr onmouseout="frac_stop()" onmouseover="frac_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='frac_image'>
+                <img src='images/frac_after.png' width="160"></div>
+                <img src='images/frac_before.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function frac_start() {
+                  document.getElementById('frac_image').style.opacity = "1";
+                }
+
+                function frac_stop() {
+                  document.getElementById('frac_image').style.opacity = "0";
+                }
+                frac_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">              <a href="https://github.com/HollyDQWang/fractissimo">
+
+                <papertitle>Fractissimo: A Fractal Music Visualizer</papertitle>
+              </a>
+              <br>
+              Dongqing Wang, Riley Niu, Cynthia He and Jinwei Shen
+              <br>
+              <em>CS 4621 Computer Graphics Practivum Final Project</em>, 2019
+              <br>
+              <a href="https://github.com/HollyDQWang/fractissimo">Code</a>
+              <p></p>
+              <p> A fractal music visualizer that allows you to upload your favorite song (mp3, m4a, wav, aiff, or flac) and creates a bedazzling fractal visualization of the song for you.</p>
             
             </td>
           </tr>   
