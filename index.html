@@ -100,7 +100,7 @@
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
           <td style="padding:20px;width:100%;vertical-align:middle">
-            <heading>School Projects</heading>
+            <heading>Selected School Projects</heading>
             <p>
               During my undergraduate studies at Cornell, I've been involved in many interesting projects from music visualization to on-skin interface development.   
             </p>
@@ -202,11 +202,50 @@
                 <papertitle>WovenSkin: Weaving Craft Techniques with On-Skin Technologies</papertitle>
               </a>
               <br>
+              <em>Research Assist for <a href="http://www.hybridbody.human.cornell.edu">Hybrid Body Lab</a></em>, 2019
+              <br>
               <a href="https://www.hybridbody.human.cornell.edu/wovenskin">Project Page</a>
               <p></p>
               <p> Worked on the electronics and software control, detecting user gestures and hand movements as well as tempreture changes of WovenSkin, a fabrication process to create customized functional devices that can be attached directly on human skin.</p>
            </td>
           </tr>   
+
+          <tr onmouseout="visual_stop()" onmouseover="visual_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="one">
+                  <div class="two" id='visual_image'><video  width=100% height=100% muted autoplay loop>
+                    <source src="images/vis_after.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                    </video></div>
+                  <img src='images/vis_before.png' width="160">
+                </div>
+              <script type="text/javascript">
+                function visual_start() {
+                  document.getElementById('visual_image').style.opacity = "1";
+                }
+
+                function visual_stop() {
+                  document.getElementById('visual_image').style.opacity = "0";
+                }
+                visual_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://www.hackster.io/moemoe2nd/visual-piano-300e13">
+                <papertitle>Visual Piano: A Tool to Visualize Tonal Music with Color</papertitle>
+              </a>
+              <br>
+              Kunpeng Huang, Owen Deng, Xinyi Yang, Dongqing Wang and Yisu Zheng
+              <br>
+              <em>Cornell Make-a-thon</em>, 2019
+              <br>
+              <a href="https://www.hackster.io/moemoe2nd/visual-piano-300e13">Project Page</a> /
+              <a href="https://youtu.be/SxZjuxQ1pQA">YouTube</a>
+              <p></p>
+              <p>A device dedicated for everyone with or without a perfect hearing to create and enjoy music in various colorful ways.</p>
+           </td>
+          </tr>
 
 
         </tbody></table>
