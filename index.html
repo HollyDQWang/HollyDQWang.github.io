@@ -87,6 +87,46 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr onmouseout="vnca_stop()" onmouseover="vnca_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='vnca_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/wave-cloud_billowy_150.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/billowy.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function vnca_start() {
+                  document.getElementById('vnca_image').style.opacity = "1";
+                }
+
+                function vnca_stop() {
+                  document.getElementById('vnca_image').style.opacity = "0";
+                }
+                vnca_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://dongqing-wang.com">
+                <papertitle>Volumetric Style Transfer using Neural Cellular Automata</papertitle>
+              </a>
+              <br>
+              <strong>Dongqing Wang</strong>,
+              Ehsan Pajouheshgar,
+              Yitao Xu,
+              Tong Zhang,
+              Sabine Süsstrunk
+              <br>
+              <em>Under submission</em>, 2024
+              <br>
+              <a href="https://ivrl.github.io/InNeRF360/">arXiv</a> 
+              <p></p>
+              <p>VNCA is a novel model for efficient volumetric style transfer that synthesizes multi-view consistent stylizing features on the target smoke in real-time, while exhibiting temporally coherent transitions between stylized frame.</p>
+            
+            </td>
+          </tr>  
+          
           <tr onmouseout="ip360_stop()" onmouseover="ip360_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
@@ -104,12 +144,11 @@
                 function ip360_stop() {
                   document.getElementById('ip360_image').style.opacity = "0";
                 }
-                nemto_stop()
+                ip360_stop()
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
               <a href="https://ivrl.github.io/InNeRF360/">
-                 <!-- todo add project page -->
                 <papertitle>InNeRF360: Text-Guided 3D-Consistent Object Inpainting on 360-degree Neural Radiance Fields</papertitle>
               </a>
               <br>
@@ -120,9 +159,7 @@
               <br>
               <em>CVPR</em>, 2024
               <br>
-              <!-- <a href="https://arxiv.org/abs/2305.15094">arXiv</a> / -->
               <a href="https://ivrl.github.io/InNeRF360/">Project Page</a> 
-              <!-- <a href="">Code (Coming Soon)</a> -->
               <p></p>
               <p>InNeRF360 allows removing or editing of objects within an unbounded 360 degree NeRF through 2D image processing tools guided by 3D priors.</p>
             
@@ -152,7 +189,6 @@
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
               <a href="https://ivrl.github.io/NEMTO/">
-                 <!-- todo add project page -->
                 <papertitle>NEMTO: Neural Environment Matting for Novel View and Relighting Synthesis of Transparent Objects</papertitle>
               </a>
               <br>
@@ -162,9 +198,7 @@
               <br>
               <em>ICCV</em> 2023; ICCV 2023 TRICKY workshop <b style='color:red;'>Spotlight</b>
               <br>
-              <!-- <a href="https://arxiv.org/abs/2303.11963">arXiv</a> / -->
               <a href="https://ivrl.github.io/NEMTO/">Project Page</a> 
-              <!-- <a href="">Code (Coming Soon)</a> -->
               <p></p>
               <p> A neural representation for a 3D transparent object that disentangles its geometry and illumination-dependent appearance.</p>
             
